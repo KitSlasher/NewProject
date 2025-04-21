@@ -2,20 +2,35 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        for(int i = 1; i <= 10; i++){
-            System.out.println(i)
+        int number = 1;
+        while(number <= 50){
+            if(number % 2 == 0){
+                System.out.println(number)
+            }
+            number++;
         }
 
-        for(int i = 0; i < 21; i = i + 2){
-            System.out.println(i)
-        }
+        int number1 = 1;
+        int quantity = 0;
+        do{
+            if(number1 % 7 == 0){
+                quantity++;
+            }
+            number++;
+        }while(number <= 100);
 
-        for(int i = 7; i <= 100; i = i + 7){
-            System.out.println(i)
+        int number2 = 1;
+        int sum = 0;
+        while(number2 <= 100){
+            sum = sum + number2;
+            number2++;
         }
+        System.out.println(sum);
 
-        for(int i = 1; i <= 100; i++){
-            System.out.println("Месяц " + i + ". Сумма накоплений равна " + i * 12000 + "рублей")
-        }
+        sum1 = 0
+        do{
+            int v = int (Math.random() * 20) + 1;
+            sum = sum + v;
+        }while(v != 15)
     }
 }
