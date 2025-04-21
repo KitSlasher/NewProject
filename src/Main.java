@@ -2,41 +2,20 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int age = 5;
-        if(age >= 2 && age <= 6){
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
-        }
-        if(age >= 7 && age <= 17){
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
-        }
-        if(age >= 18 && age <= 23){
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
-        }
-        if(age >= 24){
-            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
+        for(int i = 1; i <= 10; i++){
+            System.out.println(i)
         }
 
-        int quantity = 50;
-        if(quantity < 60){
-            System.out.println("В вагоне есть сидячие и стоячие места");
-        }else if(quantity < 102 && qantity >=60){
-            System.out.println("В вагоне есть стоячие места");
-        }else{
-            System.out.println("В вагоне нет мест");
+        for(int i = 0; i < 21; i = i + 2){
+            System.out.println(i)
         }
 
-        int year = 2015;
-        if((year % 4 ==0 && yaer % 100 != 0) || year % 400 == 0){
-            System.out.println(year + " год является високосным");
-        }else{
-            System.out.println(year + " год  не является високосным");
+        for(int i = 7; i <= 100; i = i + 7){
+            System.out.println(i)
         }
 
-        int monthNumber = 1;
-        swith(monthNumber){
-            case 1:
-                System.out.println("Это зимний месяц");
-            
+        for(int i = 1; i <= 100; i++){
+            System.out.println("Месяц " + i + ". Сумма накоплений равна " + i * 12000 + "рублей")
         }
     }
 }
