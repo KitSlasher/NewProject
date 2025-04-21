@@ -2,31 +2,41 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        byte number = 67;
-        short number2 = 1098;
-        int number3 = 40000;
-        long number4 = 5748398l;
-        float number5 = 8.905f;
-        double number6 = 5.0987;
-        System.out.println("Значение переменной number с типом byte равно " + number);
-        System.out.println("Значение переменной number2 с типом short равно " + number2);
-        System.out.println("Значение переменной number3 с типом int равно " + number3);
-        System.out.println("Значение переменной number4 с типом long равно " + number4);
-        System.out.println("Значение переменной number5 с типом float равно " + number5);
-        System.out.println("Значение переменной number6 с типом double равно " + number6);
-        
-        int weightBanan = 80;
-        int weight100mlMilk = 105;
-        int weightBricket = 100;
-        int weightEgg = 70;
-        int weightSum = 5 * weightBanan + 2 * weight100mlMilk + 2 * weightBricket + 4 * weightEgg;
-        System.out.println("Масса в граммах: " + weightSum + "   в килограммах: " + weightSum/1000);
+        int age = 5;
+        if(age >= 2 && age <= 6){
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+        }
+        if(age >= 7 && age <= 17){
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+        }
+        if(age >= 18 && age <= 23){
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
+        }
+        if(age >= 24){
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
+        }
 
-        int mashaSalary = 67760;
-        int denisSalary = 83690;
-        int kristinaSalary = 76230;
-        System.out.println("Маша теперь получает " + mashaSalary * 1,1 + " рублей. Годовой доход вырос на " + mashaSalary * 1,2);
-        System.out.println("Денис теперь получает " + denisSalary * 1,1 + " рублей. Годовой доход вырос на " + denisSalary * 1,2);
-        System.out.println("Кристина теперь получает " + kristinaSalary * 1,1 + " рублей. Годовой доход вырос на " + kristinaSalary * 1,2);
+        int quantity = 50;
+        if(quantity < 60){
+            System.out.println("В вагоне есть сидячие и стоячие места");
+        }else if(quantity < 102 && qantity >=60){
+            System.out.println("В вагоне есть стоячие места");
+        }else{
+            System.out.println("В вагоне нет мест");
+        }
+
+        int year = 2015;
+        if((year % 4 ==0 && yaer % 100 != 0) || year % 400 == 0){
+            System.out.println(year + " год является високосным");
+        }else{
+            System.out.println(year + " год  не является високосным");
+        }
+
+        int monthNumber = 1;
+        swith(monthNumber){
+            case 1:
+                System.out.println("Это зимний месяц");
+            
+        }
     }
 }
