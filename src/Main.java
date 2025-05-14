@@ -2,13 +2,21 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int[] massive = {1, -4, 9, 67, -45, 2};
-        for(int number: massive){
-            System.out.println(number);
+        String text = "Я приехал отдыхать на пляж";
+        int val = text.indexOf("Java");
+        if(val > 0){
+            System.out.println("Длинна строки: " + text.lenght + ". Первый символ: " + text.charAt(0) + ". Содержит Java: Да");
+        }else{
+            
+            System.out.println("Длинна строки: " + text.lenght + ". Первый символ: " + text.charAt(0) + ". Содержит Java: Да");
         }
-        for(int i = 0; i < massive.lenght; i++){
-            massive[i] = massive[i] * 2;
-        }
-        System.out.println(massive);
+
+        System.out.println(text.substring(2, 11).toUpperCase);
+
+        String name = "яблоко";
+        int quantity = 3;
+        int coast = 100;
+        
+            System.out.println("Вы купили " + name + ", количество: " + quantity + ", итоговая стоимость: " + coast);
     }
 }
