@@ -2,21 +2,41 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        String text = "Я приехал отдыхать на пляж";
-        int val = text.indexOf("Java");
-        if(val > 0){
-            System.out.println("Длинна строки: " + text.lenght + ". Первый символ: " + text.charAt(0) + ". Содержит Java: Да");
+        sum = 1;
+        sumx = 0;
+    }
+    public void sum(int a, int b){
+        return a * b;
+    }
+
+    public void sumx(int n){
+        if(n < 1){
+            for(int i; i > n; i--){
+                sum += i;
+            }
         }else{
-            
-            System.out.println("Длинна строки: " + text.lenght + ". Первый символ: " + text.charAt(0) + ". Содержит Java: Да");
+            for(int i; i < n; i++){
+                sum += i;
+            }
         }
+    }
 
-        System.out.println(text.substring(2, 11).toUpperCase);
+    public void buyItem(String name){
+        return "Вы купили: " + name;
+    }
+    public void buyItem(String name, int coast, int quantity){
+        return "Вы купили: " + name + " за " + coast + " рублей, в количестве" + quantity;
+    }
 
-        String name = "яблоко";
-        int quantity = 3;
-        int coast = 100;
-        
-            System.out.println("Вы купили " + name + ", количество: " + quantity + ", итоговая стоимость: " + coast);
+    public int sumnum(int a){
+        if(a % 10 == null){
+            return null
+        }
+        sumx += a % 10;
+        return sumnum(a % 10)
+    }
+
+    public void S(int a){
+        return a * 4;
     }
 }
