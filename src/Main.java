@@ -2,41 +2,38 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        sum = 1;
-        sumx = 0;
+        Animal lion = new Animal();
+        lion.thisAnimal;
     }
-    public void sum(int a, int b){
-        return a * b;
+}
+class Animal{
+    String type;
+    String name;
+    public Animal(String type, String name){
+        this.name = name;
+        this. type = type;
+    public void thisAnimal(String name, String type)P{
+        System.out.println("Это " + type + " по имени " + name)
     }
+}
 
-    public void sumx(int n){
-        if(n < 1){
-            for(int i; i > n; i--){
-                sum += i;
-            }
-        }else{
-            for(int i; i < n; i++){
-                sum += i;
-            }
+class Library{
+    String[] books = new String[a];
+    public void addBook(String nameBook){
+        books.append(nameBook);
+    }
+    public void bookss(String[] books){
+        for(String book: books){
+            System.out.println(book);
         }
     }
-
-    public void buyItem(String name){
-        return "Вы купили: " + name;
-    }
-    public void buyItem(String name, int coast, int quantity){
-        return "Вы купили: " + name + " за " + coast + " рублей, в количестве" + quantity;
-    }
-
-    public int sumnum(int a){
-        if(a % 10 == null){
-            return null
+    public void searchBook(String bookz){
+        for(String book: books){
+            if(book == bookz){
+                System.out.println("Книга " + bookz + " найдена");
+            }else{
+                System.out.println("Книга " + bookz + "  не найдена");
+            }
         }
-        sumx += a % 10;
-        return sumnum(a % 10)
-    }
-
-    public void S(int a){
-        return a * 4;
     }
 }
