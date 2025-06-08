@@ -2,36 +2,38 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Car electro1 = new ElectricCar();
-        electro1.startEngine;
-        electro1.stopEngine;
-        electro1.needBatary;
+        Employee employee = new Employee("Иван", 18, 7000);
+        System.out.println(employee.getName + ", " + employee.getAge + " лет, зарплата: " + employee.getSalary);
     }
 }
-class Car{
-    private int year;
-    private String model;
-    private String brand;
-    public String startEngine(){
-        System.out.println("Двигатель запущен");
+class Person{
+    private String name;
+    private int age;
+
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
     }
-    public String stopEngine(){
-        System.out.println("Двигатель остановлен");
+
+    public String getName(){
+        return name;
+    }
+    public String getAge(){
+        return age;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setName(int age){
+        this.age = age;
     }
 }
-class ElectricCar extends Car{
-    private int batary;
-    @Override
-    public String startEngine(){
-        System.out.println("Электродвигатель запущен");
+class Employee extends Person{
+    private int salary;
+    public String getSalary(){
+        return salary;
     }
-    @Override
-    public String stopEngine(){
-        System.out.println("Электродвигатель остановлен");
-    }
-    public String needBatary(){
-        if(batary < 20){
-            System.out.println("Батарея разряжена, требуется зарядка")
-        }
+    public void setSalary(int salary){
+        this.salary = salary;
     }
 }
