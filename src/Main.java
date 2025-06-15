@@ -2,38 +2,30 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Employee employee = new Employee("Иван", 18, 7000);
-        System.out.println(employee.getName + ", " + employee.getAge + " лет, зарплата: " + employee.getSalary);
+        Car car = new Car();
+        Bike bike = new Bike();
+        TransportManager carManager = new TransportManager(car);
+        TransportManager bikeManager = new TransportManager(bike);
+        carManager.startTransport;
+        bikeManager.startTransport;
     }
 }
-class Person{
-    private String name;
-    private int age;
-
-    public Person(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName(){
-        return name;
-    }
-    public String getAge(){
-        return age;
-    }
-    public void setName(String name){
-        this.name = name;
-    }
-    public void setName(int age){
-        this.age = age;
+public interface Transport{
+    public String move();
+}
+class Car implements Transport{
+    public String move(){
+        System.out.println("Машина пришла в движение");
     }
 }
-class Employee extends Person{
-    private int salary;
-    public String getSalary(){
-        return salary;
+class Bike implements Transport{
+    public String move(){
+        System.out.println("Велосипед пришел в движение");
     }
-    public void setSalary(int salary){
-        this.salary = salary;
+}
+class TransportManager{
+    private final Transport transport;
+    public startTransport(Transport transport){
+        transport.move()
     }
 }
